@@ -6,7 +6,7 @@ csv_file = "C:\\Users\\njulia\\Downloads\\crocker_gedi_para_v3_AOI2_04112024.csv
 parquet_file = "C:\\Users\\njulia\\Downloads\\crocker_gedi_para_v3_AOI2_04112024.parquet"
 chunksize = 100_000
 
-csv_stream = pd.read_csv(csv_file, sep='\t',chunksize=chunksize, low_memory=False)
+csv_stream = pd.read_csv(csv_file, sep=',',chunksize=chunksize, low_memory=False)
 
 for i, chunk in enumerate(csv_stream):
     print("Chunk", i)
