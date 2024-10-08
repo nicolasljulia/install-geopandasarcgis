@@ -1,0 +1,427 @@
+(arcgispro-py3-dev) C:\Users\UserX\AppData\Local\ESRI\conda\envs\arcgispro-py3-dev>activate arcgispro-py3
+
+(arcgispro-py3) C:\Users\UserX\AppData\Local\ESRI\conda\envs\arcgispro-py3-dev>conda create --name esri-test --clone arcgispro-py3
+Source:      C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3
+Destination: C:\Users\UserX\AppData\Local\ESRI\conda\envs\esri-test
+Packages: 196
+Files: 447
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: \ Uninstalling prior versions of arcgis widget
+Installing C:\Users\UserX\AppData\Local\ESRI\conda\envs\esri-test\lib\site-packages\arcgis\widgets/js/dist -> arcgis
+Up to date: C:\Users\UserX\AppData\Local\ESRI\conda\envs\esri-test\share\jupyter\nbextensions\arcgis\arcgis-map-ipywidget-jupyterlab.js
+Up to date: C:\Users\UserX\AppData\Local\ESRI\conda\envs\esri-test\share\jupyter\nbextensions\arcgis\arcgis-map-ipywidget-jupyterlab.js.map
+Up to date: C:\Users\UserX\AppData\Local\ESRI\conda\envs\esri-test\share\jupyter\nbextensions\arcgis\arcgis-map-ipywidget.js
+Up to date: C:\Users\UserX\AppData\Local\ESRI\conda\envs\esri-test\share\jupyter\nbextensions\arcgis\arcgis-map-ipywidget.js.map
+Up to date: C:\Users\UserX\AppData\Local\ESRI\conda\envs\esri-test\share\jupyter\nbextensions\arcgis\extension.js
+Up to date: C:\Users\UserX\AppData\Local\ESRI\conda\envs\esri-test\share\jupyter\nbextensions\arcgis\extension.js.map
+Up to date: C:\Users\UserX\AppData\Local\ESRI\conda\envs\esri-test\share\jupyter\nbextensions\arcgis\index.js
+Up to date: C:\Users\UserX\AppData\Local\ESRI\conda\envs\esri-test\share\jupyter\nbextensions\arcgis\index.js.map
+- Validating: ok
+
+    To initialize this nbextension in the browser every time the notebook (or other app) loads:
+
+          jupyter nbextension enable arcgis --py --sys-prefix
+
+Enabling notebook extension arcgis/extension...
+      - Validating: ok
+
+/
+| DEBUG menuinst_win32:__init__(199): Menu: name: 'Anaconda${PY_VER} ${PLATFORM}', prefix: 'C:\Users\UserX\AppData\Local\ESRI\conda\envs\esri-test', env_name: 'esri-test', mode: 'user', used_mode: 'user'
+DEBUG menuinst_win32:create(324): Shortcut cmd is C:\Users\UserX\AppData\Local\ESRI\conda\envs\esri-test\python.exe, args are ['C:\\Users\\UserX\\AppData\\Local\\ESRI\\conda\\envs\\esri-test\\cwp.py', 'C:\\Users\\UserX\\AppData\\Local\\ESRI\\conda\\envs\\esri-test', 'C:\\Users\\UserX\\AppData\\Local\\ESRI\\conda\\envs\\esri-test\\python.exe', 'C:\\Users\\UserX\\AppData\\Local\\ESRI\\conda\\envs\\esri-test\\Scripts\\jupyter-notebook-script.py', '"%USERPROFILE%/"']
+done
+#
+# To activate this environment, use
+#
+#     $ activate esri-test
+#
+# To deactivate an active environment, use
+#
+#     $ deactivate
+
+
+(arcgispro-py3) C:\Users\UserX\AppData\Local\ESRI\conda\envs\arcgispro-py3-dev>activate esri-test
+
+(esri-test) C:\Users\UserX\AppData\Local\ESRI\conda\envs\arcgispro-py3-dev>conda install geopandas
+Collecting package metadata (current_repodata.json): done
+Solving environment: /
+The environment is inconsistent, please check the package plan carefully
+The following packages are causing the inconsistency:
+
+  - esri/win-64::arcgis==1.9.1=py37_2327
+  - esri/win-64::arcpy==2.9=py37_arcgispro_32704
+  - esri/win-64::cftime==1.5.0=py37_1
+  - esri/win-64::gdal==3.3.0=arcgispro_py37_16778
+  - esri/win-64::h5py==2.10.0=py37_arcgispro_12
+  - esri/noarch::lerc==2.2=py_0
+  - esri/win-64::matplotlib==3.4.2=py37_arcgispro_1
+  - defaults/win-64::mkl-service==2.3.0=py37h196d8e1_0
+  - defaults/win-64::mkl_fft==1.3.0=py37h46781fe_0
+  - esri/win-64::mkl_random==1.2.0=py37_0
+  - esri/win-64::netcdf4==1.5.7=py37_arcgispro_2
+  - defaults/win-64::numexpr==2.7.3=py37hcbcaa1e_0
+  - esri/win-64::numpy==1.20.1=py37_0
+  - defaults/win-64::pandas==1.2.3=py37hf11a4ad_0
+  - esri/noarch::saspy==3.7.8=py_0
+  - defaults/win-64::scipy==1.6.2=py37h14eb087_0
+  - esri/win-64::swat==1.9.3=py37_0
+  - defaults/noarch::xarray==0.17.0=pyhd3eb1b0_0
+failed with initial frozen solve. Retrying with flexible solve.
+Solving environment: failed with repodata from current_repodata.json, will retry with next repodata source.
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: C:\Users\UserX\AppData\Local\ESRI\conda\envs\esri-test
+
+  added / updated specs:
+    - geopandas
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    curl-7.82.0                |       h2bbff1b_0         140 KB
+    libcurl-7.82.0             |       h86230a5_0         296 KB
+    ------------------------------------------------------------
+                                           Total:         435 KB
+
+The following NEW packages will be INSTALLED:
+
+  bzip2              pkgs/main/win-64::bzip2-1.0.8-he774522_0
+  cfitsio            pkgs/main/win-64::cfitsio-3.470-he774522_6
+  click-plugins      pkgs/main/noarch::click-plugins-1.1.1-pyhd3eb1b0_0
+  cligj              pkgs/main/win-64::cligj-0.7.2-py37haa95532_0
+  curl               pkgs/main/win-64::curl-7.82.0-h2bbff1b_0
+  expat              pkgs/main/win-64::expat-2.4.4-h6c2663c_0
+  fiona              pkgs/main/win-64::fiona-1.8.13.post1-py37h758c064_0
+  freexl             pkgs/main/win-64::freexl-1.0.6-h2bbff1b_0
+  geopandas          pkgs/main/noarch::geopandas-0.9.0-py_1
+  geopandas-base     pkgs/main/noarch::geopandas-base-0.9.0-py_1
+  geos               pkgs/main/win-64::geos-3.8.0-h33f27b4_0
+  geotiff            pkgs/main/win-64::geotiff-1.7.0-h4545760_0
+  hdf4               pkgs/main/win-64::hdf4-4.2.13-h712560f_2
+  hdf5               pkgs/main/win-64::hdf5-1.10.4-h7ebc959_0
+  icu                pkgs/main/win-64::icu-58.2-ha925a31_3
+  joblib             pkgs/main/noarch::joblib-1.1.0-pyhd3eb1b0_0
+  kealib             pkgs/main/win-64::kealib-1.4.12-h07cbb95_0
+  krb5               pkgs/main/win-64::krb5-1.19.2-h5b6d351_0
+  libboost           pkgs/main/win-64::libboost-1.73.0-h6c2663c_11
+  libcurl            pkgs/main/win-64::libcurl-7.82.0-h86230a5_0
+  libgdal            esri/win-64::libgdal-3.0.2-h955fff2_0
+  libiconv           pkgs/main/win-64::libiconv-1.15-h1df5818_7
+  libkml             esri/win-64::libkml-1.3.0-he5f2a48_4
+  libnetcdf          pkgs/main/win-64::libnetcdf-4.7.3-h1302dcc_0
+  libpq              pkgs/main/win-64::libpq-12.2-hb652d5d_1
+  libspatialindex    pkgs/main/win-64::libspatialindex-1.9.3-h6c2663c_0
+  libspatialite      pkgs/main/win-64::libspatialite-4.3.0a-h7ffb84d_0
+  libssh2            pkgs/main/win-64::libssh2-1.9.0-h7a1dbc1_1
+  m2w64-expat        pkgs/msys2/win-64::m2w64-expat-2.1.1-2
+  m2w64-gcc-libgfor~ pkgs/msys2/win-64::m2w64-gcc-libgfortran-5.3.0-6
+  m2w64-gcc-libs     pkgs/msys2/win-64::m2w64-gcc-libs-5.3.0-7
+  m2w64-gcc-libs-co~ pkgs/msys2/win-64::m2w64-gcc-libs-core-5.3.0-7
+  m2w64-gettext      pkgs/msys2/win-64::m2w64-gettext-0.19.7-2
+  m2w64-gmp          pkgs/msys2/win-64::m2w64-gmp-6.1.0-2
+  m2w64-libiconv     pkgs/msys2/win-64::m2w64-libiconv-1.14-6
+  m2w64-libwinpthre~ pkgs/msys2/win-64::m2w64-libwinpthread-git-5.0.0.4634.697f757-2
+  m2w64-xz           pkgs/msys2/win-64::m2w64-xz-5.2.2-2
+  mapclassify        pkgs/main/noarch::mapclassify-2.4.3-pyhd3eb1b0_0
+  matplotlib-base    esri/win-64::matplotlib-base-3.4.3-py37_arcgispro_1
+  msys2-conda-epoch  pkgs/msys2/win-64::msys2-conda-epoch-20160418-1
+  munch              pkgs/main/noarch::munch-2.5.0-pyhd3eb1b0_0
+  openjpeg           pkgs/main/win-64::openjpeg-2.4.0-h4fc8c34_0
+  pcre               pkgs/main/win-64::pcre-8.45-hd77b12b_0
+  postgresql         pkgs/main/win-64::postgresql-12.2-hb652d5d_1
+  proj               pkgs/main/win-64::proj-6.2.1-h9f7ef89_0
+  pyproj             pkgs/main/win-64::pyproj-2.6.1.post1-py37h593ac45_1
+  rtree              pkgs/main/win-64::rtree-0.9.7-py37h2eaa2aa_1
+  scikit-learn       pkgs/main/win-64::scikit-learn-1.0.2-py37hf11a4ad_1
+  shapely            pkgs/main/win-64::shapely-1.7.1-py37h06580b3_0
+  tbb                pkgs/main/win-64::tbb-2018.0.5-he980bc4_0
+  threadpoolctl      pkgs/main/noarch::threadpoolctl-2.2.0-pyh0d69192_0
+  tiledb             esri/win-64::tiledb-1.6.3-h587dcfd_0
+  xerces-c           pkgs/main/win-64::xerces-c-3.2.3-ha925a31_0
+
+The following packages will be UPDATED:
+
+  certifi                          2021.5.30-py37haa95532_0 --> 2021.10.8-py37haa95532_2
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+libcurl-7.82.0       | 296 KB    | ############################################################################ | 100%
+curl-7.82.0          | 140 KB    | ############################################################################ | 100%
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: \
+
+    Windows 64-bit packages of scikit-learn can be accelerated using scikit-learn-intelex.
+    More details are available here: https://intel.github.io/scikit-learn-intelex
+
+    For example:
+
+        $ conda install scikit-learn-intelex
+        $ python -m sklearnex my_application.py
+
+
+done
+
+(esri-test) C:\Users\UserX\AppData\Local\ESRI\conda\envs\arcgispro-py3-dev>conda list
+# packages in environment at C:\Users\UserX\AppData\Local\ESRI\conda\envs\esri-test:
+#
+# Name                    Version                   Build  Channel
+appdirs                   1.4.4                      py_0
+arcgis                    1.9.1                 py37_2327    esri
+arcgispro                 2.9                           0    esri
+arcpy                     2.9             py37_arcgispro_32704  [arcgispro]  esri
+arrow-cpp                 1.0.1                         3    esri
+asn1crypto                1.4.0                      py_0
+atomicwrites              1.4.0                      py_0
+attrs                     21.2.0             pyhd3eb1b0_0
+azure-core                1.12.0                     py_0    esri
+azure-storage-blob        12.8.0                     py_0    esri
+backcall                  0.2.0              pyhd3eb1b0_0
+black                     19.10b0                    py_0
+blas                      1.0                         mkl
+bleach                    3.3.0              pyhd3eb1b0_0
+blinker                   1.4              py37haa95532_0
+brotlipy                  0.7.0           py37h2bbff1b_1003
+bzip2                     1.0.8                he774522_0
+cached-property           1.5.2                      py_0
+cachetools                4.2.2              pyhd3eb1b0_0
+certifi                   2021.10.8        py37haa95532_2
+cffi                      1.14.5           py37hcd4344a_0
+cfitsio                   3.470                he774522_6
+cftime                    1.5.0                    py37_1    esri
+chardet                   4.0.0           py37haa95532_1003
+click                     7.1.2              pyhd3eb1b0_0
+click-plugins             1.1.1              pyhd3eb1b0_0
+cligj                     0.7.2            py37haa95532_0
+colorama                  0.4.4              pyhd3eb1b0_0
+cppzmq                    4.4.1                         4    esri
+cryptography              3.4.7                    py37_3    esri
+curl                      7.82.0               h2bbff1b_0
+cycler                    0.10.0                   py37_0
+decorator                 4.4.2              pyhd3eb1b0_0
+defusedxml                0.7.1              pyhd3eb1b0_0
+despatch                  0.1.0                    py37_0    esri
+entrypoints               0.3                      py37_0
+et_xmlfile                1.0.1                   py_1001
+expat                     2.4.4                h6c2663c_0
+fastcache                 1.1.0            py37he774522_0
+fiona                     1.8.13.post1     py37h758c064_0
+flake8                    3.9.0              pyhd3eb1b0_0
+freetype                  2.10.4                   vc14_3  [vc14]  esri
+freexl                    1.0.6                h2bbff1b_0
+future                    0.18.2                   py37_0    esri
+gdal                      3.3.0           arcgispro_py37_16778  [arcgispro]  esri
+geomet                    0.3.0                      py_1    esri
+geopandas                 0.9.0                      py_1
+geopandas-base            0.9.0                      py_1
+geos                      3.8.0                h33f27b4_0
+geotiff                   1.7.0                h4545760_0
+h5py                      2.10.0          py37_arcgispro_12  [arcgispro]  esri
+hdf4                      4.2.13               h712560f_2
+hdf5                      1.10.4               h7ebc959_0
+html5lib                  1.1                        py_0
+icc_rt                    2019.0.5            arcgispro_0  [arcgispro]  esri
+icu                       58.2                 ha925a31_3
+idna                      2.10               pyhd3eb1b0_0
+importlib-metadata        3.7.3            py37haa95532_1
+importlib_metadata        3.7.3                hd3eb1b0_1
+iniconfig                 1.1.1              pyhd3eb1b0_0
+intel-openmp              2020.0            arcgispro_166  [arcgispro]  esri
+ipykernel                 5.1.1                    py37_0    esri
+ipython                   7.21.0                   py37_0    esri
+ipython_genutils          0.2.0              pyhd3eb1b0_1
+ipywidgets                7.4.2                    py37_0
+isodate                   0.6.0                      py_0    esri
+jdcal                     1.4.1                      py_0
+jedi                      0.18.0                   py37_0    esri
+jinja2                    2.11.3             pyhd3eb1b0_0
+joblib                    1.1.0              pyhd3eb1b0_0
+jpeg                      9d                            0    esri
+json5                     0.9.4                    py37_0    esri
+jsonschema                3.2.0                      py_2
+jupyter_client            6.1.7                      py_1    esri
+jupyter_console           6.4.0                      py_1    esri
+jupyter_contrib_core      0.3.3                      py_4    esri
+jupyter_contrib_nbextensions 0.5.1                     py_24    esri
+jupyter_core              4.6.3                    py37_2    esri
+jupyter_highlight_selected_word 0.2.0                      py_4    esri
+jupyter_latex_envs        1.4.6                      py_3    esri
+jupyter_nbextensions_configurator 0.4.1                      py_3    esri
+jupyterlab                2.2.7                      py_0    esri
+jupyterlab_server         1.2.0                      py_0
+kealib                    1.4.12               h07cbb95_0
+keyring                   21.4.0                   py37_0    esri
+kiwisolver                1.3.1            py37hd77b12b_0
+krb5                      1.19.2               h5b6d351_0
+lerc                      2.2                        py_0    esri
+libboost                  1.73.0              h6c2663c_11
+libcurl                   7.82.0               h86230a5_0
+libdeflate                1.8                  h2bbff1b_5
+libgdal                   3.0.2                h955fff2_0    esri
+libiconv                  1.15                 h1df5818_7
+libkml                    1.3.0                he5f2a48_4    esri
+libnetcdf                 4.7.3                h1302dcc_0
+libpng                    1.6.37               h2a8f88b_0
+libpq                     12.2                 hb652d5d_1
+libprotobuf               3.13.0.1             h200bbdf_0
+libsodium                 1.0.18                        2    esri
+libspatialindex           1.9.3                h6c2663c_0
+libspatialite             4.3.0a               h7ffb84d_0
+libssh2                   1.9.0                h7a1dbc1_1
+libtiff                   4.3.0                         1    esri
+libxml2                   2.9.12              arcgispro_0  [arcgispro]  esri
+libxslt                   1.1.34               he774522_0
+lxml                      4.6.3            py37h9b66d53_0
+lz4-c                     1.9.3                h2bbff1b_0
+m2w64-expat               2.1.1                         2
+m2w64-gcc-libgfortran     5.3.0                         6
+m2w64-gcc-libs            5.3.0                         7
+m2w64-gcc-libs-core       5.3.0                         7
+m2w64-gettext             0.19.7                        2
+m2w64-gmp                 6.1.0                         2
+m2w64-libiconv            1.14                          6
+m2w64-libwinpthread-git   5.0.0.4634.697f757               2
+m2w64-xz                  5.2.2                         2
+mapclassify               2.4.3              pyhd3eb1b0_0
+markupsafe                1.1.1            py37hfa6e2cd_1
+matplotlib                3.4.2           py37_arcgispro_1  [arcgispro]  esri
+matplotlib-base           3.4.3           py37_arcgispro_1  [arcgispro]  esri
+mccabe                    0.6.1                    py37_1
+mistune                   0.8.4           py37hfa6e2cd_1001
+mkl                       2020.0            arcgispro_167  [arcgispro]  esri
+mkl-service               2.3.0            py37h196d8e1_0
+mkl_fft                   1.3.0            py37h46781fe_0
+mkl_random                1.2.0                    py37_0    esri
+mpmath                    1.2.1            py37haa95532_0
+msrest                    0.6.21                     py_0    esri
+msys2-conda-epoch         20160418                      1
+munch                     2.5.0              pyhd3eb1b0_0
+mypy_extensions           0.4.3                    py37_0
+nbconvert                 5.6.1                    py37_0    esri
+nbformat                  5.1.3                      py_1    esri
+netcdf4                   1.5.7           py37_arcgispro_2  [arcgispro]  esri
+networkx                  2.5                      py37_0    esri
+nlohmann_json             3.7.0                         1    esri
+nose                      1.3.7           pyhd3eb1b0_1006
+notebook                  5.7.10                   py37_0
+ntlm-auth                 1.4.0                      py_0    esri
+numexpr                   2.7.3            py37hcbcaa1e_0
+numpy                     1.20.1                   py37_0    esri
+numpy-base                1.20.1                   py37_0    esri
+oauthlib                  3.1.0                      py_0
+olefile                   0.46                     py37_0
+openjpeg                  2.4.0                h4fc8c34_0
+openpyxl                  3.0.7              pyhd3eb1b0_0
+openssl                   1.1.1k                        1    esri
+packaging                 20.9               pyhd3eb1b0_0
+pandas                    1.2.3            py37hf11a4ad_0
+pandocfilters             1.4.3            py37haa95532_1
+parso                     0.8.1              pyhd3eb1b0_0
+pathspec                  0.7.0                      py_0
+pcre                      8.45                 hd77b12b_0
+pefile                    2019.4.18                  py_0
+pickleshare               0.7.5           pyhd3eb1b0_1003
+pillow                    8.3.2                    py37_0    esri
+pip                       21.2.2           py37haa95532_0
+pluggy                    0.13.1           py37haa95532_0
+postgresql                12.2                 hb652d5d_1
+pro_notebook_integration  2.9                      py37_9    esri
+proj                      6.2.1                h9f7ef89_0
+prometheus_client         0.8.0                      py_0    esri
+prompt_toolkit            3.0.5                      py_0    esri
+protobuf                  3.13.0.1         py37ha925a31_1
+psutil                    5.8.0            py37h2bbff1b_1
+py                        1.10.0             pyhd3eb1b0_0
+pyarrow                   1.0.1                         2    esri
+pybind11                  2.7.1                         0    esri
+pybind11_json             0.2.6                         2    esri
+pycodestyle               2.6.0              pyhd3eb1b0_0
+pycparser                 2.20                       py_2
+pyflakes                  2.2.0              pyhd3eb1b0_0
+pygments                  2.9.0                      py_0    esri
+pyjwt                     2.1.0            py37haa95532_0
+pyodbc                    4.0.30           py37ha925a31_0
+pyopenssl                 20.0.1             pyhd3eb1b0_1
+pyparsing                 2.4.7              pyhd3eb1b0_0
+pypdf2                    1.26.0                     py_2    esri
+pyproj                    2.6.1.post1      py37h593ac45_1
+pyrsistent                0.17.3           py37he774522_0
+pyshp                     2.1.3              pyhd3eb1b0_0
+pysocks                   1.7.1                    py37_1
+pytest                    6.2.4                    py37_0    esri
+python                    3.7.11                        1    esri
+python-certifi-win32      1.6                        py_0    esri
+python-dateutil           2.8.1              pyhd3eb1b0_0
+pytz                      2020.1                   py37_0    esri
+pywin32-ctypes            0.2.0                    pypi_0    pypi
+pywin32-security          228                      py37_3    esri
+pywinpty                  0.5.7                    py37_0    esri
+pyyaml                    5.4.1            py37h2bbff1b_1
+pyzmq                     22.2.1                   py37_0    esri
+regex                     2021.8.3         py37h2bbff1b_0
+requests                  2.25.1             pyhd3eb1b0_0
+requests-kerberos         0.12.0                        0    esri
+requests-negotiate-sspi   0.5.2                    py37_1    esri
+requests-oauthlib         1.3.0                      py_0
+requests-toolbelt         0.9.1                      py_0
+requests_ntlm             1.1.0                      py_0    esri
+rtree                     0.9.7            py37h2eaa2aa_1
+saspy                     3.7.7                    pypi_0    pypi
+scikit-learn              1.0.2            py37hf11a4ad_1
+scipy                     1.6.2            py37h14eb087_0
+send2trash                1.5.0              pyhd3eb1b0_1
+setuptools                52.0.0           py37haa95532_0
+shapely                   1.7.1            py37h06580b3_0
+simplegeneric             0.8.1                    py37_2
+six                       1.15.0                     py_0    esri
+sqlalchemy                1.3.19           py37he774522_0
+sqlite                    3.36.0                        0    esri
+swat                      1.9.3                    py37_0    esri
+sympy                     1.5.1                    py37_0    esri
+tbb                       2018.0.5             he980bc4_0
+terminado                 0.9.3            py37haa95532_0
+testpath                  0.4.4              pyhd3eb1b0_0
+threadpoolctl             2.2.0              pyh0d69192_0
+tiledb                    1.6.3                h587dcfd_0    esri
+toml                      0.10.2             pyhd3eb1b0_0
+tornado                   6.1              py37h2bbff1b_0
+traitlets                 4.3.3                    py37_0
+typed-ast                 1.4.2            py37h2bbff1b_1
+typing_extensions         3.7.4.3            pyha847dfd_0
+ujson                     4.0.2            py37hd77b12b_0
+urllib3                   1.26.6             pyhd3eb1b0_1
+vc                        14.1                 h0510ff6_4
+vs2015_runtime            14.16.27012          hf0eaf9b_0    esri
+wcwidth                   0.2.5                      py_0
+webencodings              0.5.1                    py37_1
+wheel                     0.36.2             pyhd3eb1b0_0
+widgetsnbextension        3.4.2                    py37_0
+win_inet_pton             1.1.0                    py37_0    esri
+wincertstore              0.2                      py37_0
+winkerberos               0.7.0                    py37_0    esri
+winpty                    0.4.3                         4
+wrapt                     1.12.1           py37he774522_1
+x86cpu                    0.4                      py37_1    esri
+xarray                    0.17.0             pyhd3eb1b0_0
+xerces-c                  3.2.3                ha925a31_0
+xeus                      0.24.1                        3    esri
+xeus-python               0.8.2                         5    esri
+xlrd                      1.2.0                    py37_0
+xlwt                      1.3.0                    py37_0
+xtl                       0.6.15                        0    esri
+xz                        5.2.5                h62dcd97_0
+yaml                      0.2.5                         0    esri
+zeromq                    4.3.4                         0    esri
+zipp                      3.4.1              pyhd3eb1b0_0
+zlib                      1.2.11               h62dcd97_4
+zstd                      1.4.9                h19a0ad4_0
+
+(esri-test) C:\Users\UserX\AppData\Local\ESRI\conda\envs\arcgispro-py3-dev>
