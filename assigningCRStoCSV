@@ -1,0 +1,11 @@
+import pandas as pd
+import geopandas as gpd
+fn = r"Downloads/crocker_gedi_para_v3_AOI4_04112024.csv"
+df = pd.read_csv(fn)
+gdf = gpd.GeoDataFrame(
+    df,
+    geometry=gpd.points_from_xy(df.long, df.lats)
+)
+
+gdf.set_crs(epsg=4326, inplace=True)
+gdf.to_parquet("Downloads/crocker_gedi_para_v3_AOI4_04112024.parquet")
